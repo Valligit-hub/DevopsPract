@@ -2,4 +2,4 @@ FROM nginx:latest
 MAINTAINER VALLI
 LABEL DEPLOYING THE HTML APPLICATION USING DOCKERFILE IN DEVOPS FOR PRACTISE
 EXPOSE 80
-COPY Devopsindex.html /etc/nginx/nginx.conf
+COPY devopsindex.html /etc/nginx/nginx.conf
