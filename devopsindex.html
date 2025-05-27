@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Practice Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="bg-blue-600 text-white p-4">
+    <h1 class="text-2xl font-bold">DevOps Dashboard</h1>
+    <p class="text-sm">Monitor your pipelines, deployments, and logs</p>
+  </header>
+
+  <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <!-- CI/CD Pipeline Status -->
+    <section class="bg-white p-4 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-2">CI/CD Pipeline</h2>
+      <ul class="text-sm">
+        <li>✅ Build: Passed (5m ago)</li>
+        <li>✅ Tests: Passed</li>
+        <li>🚀 Deploy: In Progress...</li>
+      </ul>
+    </section>
+
+    <!-- Recent Deployments -->
+    <section class="bg-white p-4 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-2">Recent Deployments</h2>
+      <ul class="text-sm space-y-1">
+        <li>Staging - v1.2.3 ✅</li>
+        <li>Production - v1.2.2 ✅</li>
+        <li>Dev - v1.2.4-beta 🚧</li>
+      </ul>
+    </section>
+
+    <!-- System Logs -->
+    <section class="bg-white p-4 rounded-lg shadow">
+      <h2 class="text-xl font-semibold mb-2">System Logs</h2>
+      <pre class="text-xs bg-gray-100 p-2 rounded overflow-auto h-40">
+[INFO] Deploy started at 10:23:12
+[INFO] Running post-deploy scripts
+[WARN] Service X took 2s longer than expected
+      </pre>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 p-4">
+    &copy; 2025 DevOps Practice Panel
+  </footer>
+
+</body>
+</html>
+
+  
